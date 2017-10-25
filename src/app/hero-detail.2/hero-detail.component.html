@@ -1,0 +1,8 @@
+<form [formGroup]="formDetail">
+  <label>First name</label>
+  <input formControlName="firstname"/>
+  <app-hero-address [useraccount]="formDetail.controls.useraccount"></app-hero-address>
+  </form>
+  
+  <pre>{{formDetail.value | json}}</pre>
+  
